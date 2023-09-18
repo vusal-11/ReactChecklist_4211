@@ -13,7 +13,7 @@ const updater = (state, action) => {
 }
 
 function App() {
-  const [tasks, dispatchTasks] = useReducer(updater, [5, 6, 7, 8, 2134, 43]);
+  const [tasks, dispatchTasks] = useReducer(updater, []);
 
   return (
     <>
