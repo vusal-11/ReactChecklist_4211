@@ -5,7 +5,7 @@ function Checklist({tasks}) {
     return (
         <ul>
             {
-                tasks.map(task => <ChecklistItem />)
+                tasks.map(taskData => <ChecklistItem taskData={taskData} key={taskData.id}/>)
             }
         </ul>
     )

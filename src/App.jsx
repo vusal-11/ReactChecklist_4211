@@ -16,9 +16,15 @@ const updater = (state, action) => {
 function App() {
   const [tasks, dispatchTasks] = useReducer(updater, []);
 
+  /* [{
+            id: useId(),
+            title: taskTitle
+        }]
+  */
+
   return (
     <>
-      <Form></Form>
+      <Form onSubmit={(taskData) => dispatchTasks({type: 'addTask', payload: taskData})}></Form>
       <Button>All</Button>
       <Button>Done</Button>
       <Button>Remainded</Button>
