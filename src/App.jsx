@@ -6,7 +6,8 @@ import { useReducer } from 'react';
 
 const updater = (state, action) => {
   switch(action.type) {
-
+    case 'addTask':
+      return [...state, action.payload];
   }
 
   throw new Error('Undefined action type');

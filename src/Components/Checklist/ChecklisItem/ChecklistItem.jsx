@@ -8,7 +8,7 @@ function ChecklistItem({
 
     return (
         <li>
-            <input type="checkbox" id={id} checked/>
+            <input type="checkbox" id={id}/>
             <label htmlFor={id}>{labelName}</label>
             <Button>Edit</Button>
             <Button>Delete</Button>

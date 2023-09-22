@@ -6,7 +6,7 @@
 
 input,
 button {
-    appearance: none;
+    /* appearance: none; */
     border: none;
 }
 
