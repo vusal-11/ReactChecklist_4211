@@ -1,14 +1,20 @@
-import ChecklistItem from "./ChecklisItem/ChecklistItem";
 
-function Checklist({tasks}) {
+import ChecklistItem from "./ChecklistItem/ChecklistItem";
+
+function Checklist({tasks,dispatch}){
+
 
     return (
+
         <ul>
             {
-                tasks.map(taskData => <ChecklistItem taskData={taskData} key={taskData.id}/>)
+                tasks.map((taskData) => <ChecklistItem dispatch={dispatch} taskData={taskData} key={taskData.id}/> )
             }
         </ul>
+
     )
+
 }
 
-export default Checklist;
+
+export default Checklist; 
